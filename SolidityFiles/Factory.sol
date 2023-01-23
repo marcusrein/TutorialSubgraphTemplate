@@ -27,7 +27,7 @@ contract Child is Initializable {
     function updateMessage(string memory _message) public {
         message = _message;
         updatedMessageTally++;
-        emit MessageUpdated(_message, updatedMessageTally);
+        emit MessageUpdated(message, updatedMessageTally);
     }
 }
 
@@ -38,7 +38,7 @@ contract Factory is CloneFactory {
 // Factory, can you import the address of the implementation contract you'd like to clone
 // Factory, can you clone a child, can you emit an event when you've created a child?
 
-    Child[] public children;
+    Child[] private children;
     address implementation;
 
     event ChildCreated(uint date, string, address childAddress);
