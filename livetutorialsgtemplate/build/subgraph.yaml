@@ -1,0 +1,46 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Factory
+    network: goerli
+    source:
+      address: "0x9f980934623C61a89531AAE230a8D77FC3A14965"
+      abi: Factory
+      startBlock: 8356764
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ChildCreated
+      abis:
+        - name: Factory
+          file: Factory/abis/Factory.json
+      eventHandlers:
+        - event: ChildCreated(uint256,string,address)
+          handler: handleChildCreated
+      file: Factory/Factory.wasm
+templates:
+  - kind: ethereum
+    name: Child
+    network: goerli
+    source:
+      abi: Child
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Initialized
+        - MessageUpdated
+      abis:
+        - name: Child
+          file: Child/abis/Child.json
+      eventHandlers:
+        - event: Initialized(uint8)
+          handler: handleInitialized
+        - event: MessageUpdated(string,uint256)
+          handler: handleMessageUpdated
+      file: templates/Child/Child.wasm

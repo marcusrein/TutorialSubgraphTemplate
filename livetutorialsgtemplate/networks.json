@@ -1,0 +1,10 @@
+{
+  "goerli": {
+    "Factory": {
+      "address": "0x9f980934623C61a89531AAE230a8D77FC3A14965"
+    },
+    "Child": {
+      "address": "0xd2a4Fe45F4BeAC13C2a82B2588576b3E426629C0"
+    }
+  }
+}

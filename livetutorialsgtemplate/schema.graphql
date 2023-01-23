@@ -1,0 +1,25 @@
+type ChildCreated @entity(immutable: true) {
+  id: Bytes!
+  date: BigInt! # uint256
+  param1: String! # string
+  childAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Initialized @entity(immutable: true) {
+  id: Bytes!
+  version: Int! # uint8
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type MessageUpdated @entity(immutable: true) {
+  id: Bytes!
+  message: String! # string
+  updatedMessageTally: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
