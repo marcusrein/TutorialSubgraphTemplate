@@ -9,3 +9,7 @@ https://mirror.xyz/madavre.eth/0Gxsrq3ohCogRLPvQe-3fBYaz2nWopNpH8y3boq1aCw
 ## Video Version:
 
 https://youtu.be/VzBCoXTEqeY
+
+## Documentation on Data Source Templating
+
+https://thegraph.com/docs/en/developing/creating-a-subgraph/#data-source-templates
