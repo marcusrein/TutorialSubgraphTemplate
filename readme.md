@@ -4,7 +4,7 @@ Thanks for hopping into the repo for this tutorial. Here's some links to differe
 
 ## Written Version:
 
-https://docs.google.com/document/d/1BSiQHTTde8DBc_0p58F0SzW6FhgyBQR_lkKd2ePOvUI/edit?usp=sharing
+https://mirror.xyz/madavre.eth/0Gxsrq3ohCogRLPvQe-3fBYaz2nWopNpH8y3boq1aCw
 
 ## Video Version:
 
