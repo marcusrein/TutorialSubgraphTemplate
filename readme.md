@@ -1,4 +1,4 @@
-# Dynamic Decentralized Data! How to Build a Factory Pattern in Your Smart Contract and Index/Search Its Infinite Events With Subgraph Templates
+# How to Deploy and Index Factory Pattern Smart Contracts Using Remix IDE and The Graph's Subgraphs
 
 Thanks for hopping into the repo for this tutorial. Here's some links to different versions of this tutorial:
 
